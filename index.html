@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>小新抽牌</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <p class="eyebrow">Shin's Divination Studio</p>
+      <h1>小新抽牌</h1>
+      <p class="subtitle">選擇一種抽牌方式，讓今天的靈感替你指路。</p>
+    </section>
+
+    <section class="draw-grid">
+      <article class="draw-card">
+        <div class="icon">✦</div>
+        <h2>塔羅抽牌</h2>
+        <p>抽出一張塔羅牌，看看現在的能量與提醒。</p>
+        <button onclick="drawCard('tarot')">開始抽牌</button>
+      </article>
+
+      <article class="draw-card">
+        <div class="icon">☯</div>
+        <h2>易經抽牌</h2>
+        <p>從卦象中得到方向，適合用來思考選擇。</p>
+        <button onclick="drawCard('iching')">開始抽牌</button>
+      </article>
+
+      <article class="draw-card">
+        <div class="icon">◎</div>
+        <h2>星座骰子抽牌</h2>
+        <p>用星座骰子的象徵，看看當下的主題訊息。</p>
+        <button onclick="drawCard('zodiac')">開始抽牌</button>
+      </article>
+    </section>
+
+    <section class="result-box" id="resultBox">
+      <p class="result-label">抽牌結果</p>
+      <h3 id="resultTitle">請選擇一種抽牌方式</h3>
+      <p id="resultText">你的結果會顯示在這裡。</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
